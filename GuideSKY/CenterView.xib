@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CenterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9A5-dn-Y77">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-wb-IeA" customClass="BorderButton">
+                            <rect key="frame" x="113" y="334" width="150" height="44"/>
+                            <color key="backgroundColor" red="0.82233518362045288" green="0.86280566453933716" blue="0.87124752998352051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" label="gas"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="qiC-Ef-e3l"/>
+                                <constraint firstAttribute="width" constant="150" id="vdd-L1-QkZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="Gas Analysis">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="connectBluetooth:" destination="iN0-l3-epB" eventType="touchUpInside" id="TWS-Vz-uCP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-W8-Zuh" customClass="BorderButton">
+                            <rect key="frame" x="128" y="463" width="120" height="44"/>
+                            <color key="backgroundColor" red="0.37997549772262573" green="0.38735055923461914" blue="0.43712225556373596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="CMI-WN-BoL"/>
+                                <constraint firstAttribute="width" constant="120" id="Exs-O3-FxB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="Cancelonclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="UsD-uD-byn"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now, Blow into the Spirometer!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCk-hP-lAT">
+                            <rect key="frame" x="26" y="216" width="325" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUs-RU-3Eg">
+                            <rect key="frame" x="37" y="340" width="111" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28C-bx-QYA">
+                            <rect key="frame" x="251" y="334" width="86" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Amv-hZ-vAQ">
+                            <rect key="frame" x="178" y="413" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gm-nm-grq" customClass="BorderButton">
+                            <rect key="frame" x="113" y="145" width="150" height="44"/>
+                            <color key="backgroundColor" red="0.78503137826919556" green="0.75736510753631592" blue="0.7237212061882019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" label="spirometry"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Lag-Dn-xU8"/>
+                                <constraint firstAttribute="height" constant="44" id="vXN-oY-LAt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="Spirometry">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="connectBluetooth:" destination="iN0-l3-epB" eventType="touchUpInside" id="OKD-TL-c9V"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92492955923080444" green="0.94107717275619507" blue="0.9534875750541687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vw6-W8-Zuh" firstAttribute="centerX" secondItem="9A5-dn-Y77" secondAttribute="centerX" id="EWr-8L-iQq"/>
+                        <constraint firstItem="vw6-W8-Zuh" firstAttribute="centerY" secondItem="9A5-dn-Y77" secondAttribute="centerY" constant="151.5" id="I3e-ZB-Mnh"/>
+                        <constraint firstItem="SdX-wb-IeA" firstAttribute="centerX" secondItem="9A5-dn-Y77" secondAttribute="centerX" id="JbF-Nl-AOl"/>
+                        <constraint firstItem="vw6-W8-Zuh" firstAttribute="top" secondItem="SdX-wb-IeA" secondAttribute="bottom" constant="85" id="ODt-0a-9hI"/>
+                        <constraint firstItem="Amv-hZ-vAQ" firstAttribute="centerX" secondItem="9A5-dn-Y77" secondAttribute="centerX" id="SvG-cW-WfM"/>
+                        <constraint firstItem="vw6-W8-Zuh" firstAttribute="top" secondItem="Amv-hZ-vAQ" secondAttribute="bottom" constant="30" id="mVX-W1-ZAc"/>
+                        <constraint firstItem="SdX-wb-IeA" firstAttribute="top" secondItem="8Gm-nm-grq" secondAttribute="bottom" constant="145" id="uL0-Pv-5VT"/>
+                        <constraint firstItem="8Gm-nm-grq" firstAttribute="centerX" secondItem="9A5-dn-Y77" secondAttribute="centerX" id="w6B-cX-Uq0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9A5-dn-Y77" secondAttribute="bottom" id="2OC-pg-zb5"/>
+                <constraint firstItem="9A5-dn-Y77" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TpP-eS-MTH"/>
+                <constraint firstItem="9A5-dn-Y77" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gQU-x6-fcY"/>
+                <constraint firstAttribute="trailing" secondItem="9A5-dn-Y77" secondAttribute="trailing" id="yqs-Z6-EzD"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="Amv-hZ-vAQ" id="nnq-o3-IJ9"/>
+                <outlet property="blowMessage" destination="pCk-hP-lAT" id="wTy-Ch-gXV"/>
+                <outlet property="gasAnalysis" destination="SdX-wb-IeA" id="2Ac-Pf-2Un"/>
+                <outlet property="spirometry" destination="8Gm-nm-grq" id="4zw-fH-vJa"/>
+                <outlet property="time" destination="28C-bx-QYA" id="Xnt-Pl-fFl"/>
+                <outlet property="timeLeftLabel" destination="gUs-RU-3Eg" id="B1E-2P-UvR"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="59.5"/>
+        </view>
+    </objects>
+</document>
